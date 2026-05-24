@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux - HackBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HackBlog</h1>
+
+    <main class="container">
+        <section class="linux-header">
+            <div class="tux-icon">
+                <img src="../img/Linux-remove.png" alt="Tux - Mascote do Linux">
+            </div>
+            <h1>Explorando o Mundo Linux</h1>
+            <p class="subtitle">Distribuições, tutoriais e o ecossistema open-source</p>
+        </section>
+
+        <div class="distro-tabs">
+            <button class="tab-button active" data-tab="debian">GNU-based</button>
+            <button class="tab-button" data-tab="rhel">Debian-based</button>
+            <button class="tab-button" data-tab="arch">Arch-based</button>
+            <button class="tab-button" data-tab="other">Outras</button>
+        </div>
+
+        <div class="tab-content active" id="debian">
+            <div class="distro-grid">
+                <div class="distro-card">
+                    <img src="../img/kaliLinux Master.webp" alt="Kali Linux">
+                    <h3>Kali Linux</h3>
+                    <p>Kali Linux é uma distribuição GNU/Linux baseada no Debian</p>
+                    <div class="distro-meta">
+                        <span>Versão Estável: 2024.4</span>
+                        <span>DE: GNU/Linux</span>
+                    </div>
+                </div>
+
+                <div class="distro-card">
+                    <img src="../img/Parrot.jpeg" alt="Debian">
+                    <h3>Parrot</h3>
+                    <p>O Parrot é uma ramificação de "testes" do Debian com um núcleo (kernel)</p>
+                    <div class="distro-meta">
+                        <span>Versão: 6.0 </span>
+                        <span>DE: Derbian</span>
+                    </div>
+                </div>
+
+                <div class="distro-card">
+                    <img src="../img/BlackArch.png" alt="BlackArch">
+                    <h3>BlackArch</h3>
+                    <p>O BlackArch é uma distribuição de testes de penetração baseada no Arch Linux</p>
+                    <div class="distro-meta">
+                        <span>Versão: 21</span>
+                        <span>DE: Arch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="rhel">
+            <div class="distro-grid">
+                <div class="distro-card">
+                    <img src="../img/Pentoo.png" alt="PENTOO">
+                    <h3>PENTOO</h3>
+                    <p>O Pentoo é um Live CD com o foco na segurança da informação.</p>
+                    <div class="distro-meta">
+                        <span>Versão: 38</span>
+                        <span>DE: Gentoo</span>
+                    </div>
+                </div>
+
+                <div class="distro-card">
+                    <img src="../img/redhat.webp" alt="RHEL">
+                    <h3>RHEL</h3>
+                    <p>Red Hat Enterprise Linux, focado em estabilidade empresarial.</p>
+                    <div class="distro-meta">
+                        <span>Versão: 9</span>
+                        <span>DE: RedHat</span>
+                    </div>
+                </div>
+
+                <div class="distro-card">
+                    <img src="../img/Tails.webp" alt=" Tails OS">
+                    <h3>Tails OS</h3>
+                    <p>Tails, The Amnesic Incognito Live System, é uma distribuição Linux baseada no Debian.</p>
+                    <div class="distro-meta">
+                        <span>Versão: Stream</span>
+                        <span>DE: Derbian</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="linux-resources">
+            <div class="terminal-widget">
+                <div class="terminal-header">
+                    <span class="terminal-button red"></span>
+                    <span class="terminal-button yellow"></span>
+                    <span class="terminal-button green"></span>
+                    <span class="terminal-title">bash</span>
+                </div>
+                <div class="terminal-content">
+                    <p><span class="prompt">user@hackblog:~$</span> sudo apt-get update</p>
+                    <p><span class="prompt">user@hackblog:~$</span> sudo apt-get install knowledge</p>
+                    <p><span class="prompt">user@hackblog:~$</span> <span class="cursor">_</span></p>
+                </div>
+            </div>
+
+            <div class="commands">
+                <h3>Comandos Úteis</h3>
+                <ul>
+                    <li><code>grep -r "pattern" /path</code> - Busca recursiva</li>
+                    <li><code>find / -name "filename"</code> - Localizar arquivos</li>
+                    <li><code>rsync -avz source/ dest/</code> - Sincronização eficiente</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HackBlog. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/nav-bar.js"></script>
+    <script src="js/linux-tabs.js"></script>
+</body>
+</html>

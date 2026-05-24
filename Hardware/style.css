@@ -1,0 +1,205 @@
+/* Estilos específicos para a página de Hardware */
+
+head {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.hardware-banner {
+    background: url('https://via.placeholder.com/1200x400/34495e/ffffff?text=Hardware+Tech') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hardware-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 2rem;
+    max-width: 600px;
+}
+
+.banner-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.hardware-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.hardware-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hardware-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hardware-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.specs span {
+    background: #f8f9fa;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.hardware-btn {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.hardware-btn:hover {
+    background: #c0392b;
+}
+
+.hardware-sidebar {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.benchmarks h3, .newsletter h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.benchmarks ul {
+    list-style: none;
+}
+
+.benchmarks li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.benchmark-name {
+    font-weight: 500;
+}
+
+.benchmark-value {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.newsletter p {
+    margin-bottom: 15px;
+    color: #7f8c8d;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter button:hover {
+    background: #3498db;
+}
+
+@media (max-width: 768px) {
+    .hardware-banner {
+        height: 200px;
+    }
+    
+    .banner-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hardware-grid {
+        grid-template-columns: 1fr;
+    }
+}
