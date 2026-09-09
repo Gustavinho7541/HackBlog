@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="../Inicio/index.html" aria-label="HackBlog - Início"><span class="brand-mark">&lt;/&gt;</span><span>Hack<span>Blog</span></span></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="../Home/home.html">Notícias</a>
+      <a href="../Programacao/programacao.html">Programação</a>
+      <a href="../Hardware/hardware.html">Hardware</a>
+      <a href="../Tipos de Linux/distroslinux.html">Linux</a>
+      <a href="../Ferramentas/ferramentas.html">Ferramentas</a>
+      <a href="../Games/jogos.html">Games</a>
+      <a class="nav-login" href="../Login/login.html">Login</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="container">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+    <script src="script.js"></script>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div><strong>Hack<span>Blog</span></strong><p>Tecnologia, programação, hardware e cultura digital.</p></div>
+    <p>© 2026 HackBlog. Todos os direitos reservados.</p>
+  </div>
+</footer>
+</body>
+</html>

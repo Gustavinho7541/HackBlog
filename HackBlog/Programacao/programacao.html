@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação - HackBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="../Inicio/index.html" aria-label="HackBlog - Início"><span class="brand-mark">&lt;/&gt;</span><span>Hack<span>Blog</span></span></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="../Home/home.html">Notícias</a>
+      <a href="../Programacao/programacao.html">Programação</a>
+      <a href="../Hardware/hardware.html">Hardware</a>
+      <a href="../Tipos de Linux/distroslinux.html">Linux</a>
+      <a href="../Ferramentas/ferramentas.html">Ferramentas</a>
+      <a href="../Games/jogos.html">Games</a>
+      <a class="nav-login" href="../Login/login.html">Login</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+        <section class="hero-programming">
+            <h2>Mundo da Programação</h2>
+            <p>Explore tutoriais, dicas e as últimas tendências em desenvolvimento de software.</p>
+        </section>
+
+        <div class="content-wrapper">
+            <section class="posts">
+                <article class="post featured">
+                    <h1>Python 3.12: Novidades e Melhorias</h1>
+                    <span class="post-date">Publicado em 23 de Fevereiro de 2024</span>
+                    <img src="../img/python.webp" alt="Python 3.12">
+                    <p>A nova versão do Python trouxe melhorias significativas no desempenho e novas funcionalidades que todo desenvolvedor deveria conhecer. Vamos explorar as mudanças mais importantes.</p>
+                    <p>O Python 3.12 introduz melhorias fantásticas para f-strings, fornecendo maior flexibilidade e expressividade na formatação de strings. Essas melhorias são formalizadas no PEP 701 , que traz mudanças sintáticas para f-strings, removendo limitações anteriores e tornando f-strings ainda mais poderosas</p>
+                    <p>Algumas das principais novidades incluem:</p>
+                    <li>Desempenho: Melhorias significativas na velocidade de execução, tornando o Python mais rápido</li>
+                    <li>Anotações de tipo: Uma nova sintaxe para classes e funções genéricas, além de uma nova instrução "type" para criar aliases</li>
+                    <li>Mensagens de erro: Melhorias nas mensagens de erro, com sugestões e orientações úteis</li>
+                    <li>F-strings: Suporte para f-strings mais expressivas, com a possibilidade de aninhá-las arbitrariamente</li>
+                    <li>Otimizações: Otimizações, incluindo compreensões embutidas, para um Python mais rápido</li>
+                    <li>Novas bibliotecas: Novas bibliotecas e módulos, como o módulo "tomllib" para leitura de arquivos TOML</li>
+                    <li>Depreciações: Algumas funções e módulos foram depreciados, como o módulo "distutils" e a função "assertEquals"</li>
+                    <li>Melhorias de segurança: Melhorias na segurança, incluindo suporte para algoritmos de hash mais seguros</li>
+                    <li>Suporte a novos padrões: Suporte para novos padrões, como o padrão de codificação UTF-8 por padrão</li>
+                    <li>Perf profiler: Suporte para o perf profiler no Linux </li>
+                    <li>Tamanho de objetos: O tamanho base de um objeto passou de 208 bytes para 96 bytes, o que permite que mais objetos vivam na memórias</li>
+                    <li>Avaliação Postergada de Anotações: PEP 563 </li>
+                    <li>Coerção de localidade C legada: PEP 538 </li>
+                    <li>Modo de tempo de execução UTF-8 forçado: PEP 540 </li>
+                    <li>breakpoint() embutida: PEP 553</li>
+                    <li>Nova API C para armazenamento local de thread: PEP 539</li>
+                    <li>Suporte a WebAssembly: O Python 3.12 agora suporta WebAssembly, permitindo que você execute código Python em navegadores e ambientes de execução WebAssembly</li>
+                    <!-- <p>Melhorias de compatibilidade: Melhorias na compatibilidade com versões anteriores, facilitando a migração de projetos existentes</p>
+                    <p>Novas funcionalidades de depuração: Novas funcionalidades de depuração, como o novo módulo "debug" para facilitar a depuração de código Python</p>     
+                    <p>Melhorias de documentação: Melhorias na documentação, com exemplos e tutoriais atualizados</p>
+                    <p>Novas funcionalidades de segurança: Novas funcionalidades de segurança, como suporte para autenticação de dois fatores e criptografia avançada</p>
+                    <p>Novas funcionalidades de rede: Novas funcionalidades de rede, como suporte para protocolos de comunicação mais seguros e eficientes</p>
+                    <p>Novas funcionalidades de banco de dados: Novas funcionalidades de banco de dados, como suporte para novos bancos de dados e drivers</p>
+                    <p>Novas funcionalidades de inteligência artificial: Novas funcionalidades de inteligência artificial, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de aprendizado de máquina: Novas funcionalidades de aprendizado de máquina, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de ciência de dados: Novas funcionalidades de ciência de dados, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de visualização de dados: Novas funcionalidades de visualização de dados, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de computação em nuvem: Novas funcionalidades de computação em nuvem, como suporte para novos provedores e serviços</p>
+                    <p>Novas funcionalidades de computação distribuída: Novas funcionalidades de computação distribuída, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de computação paralela: Novas funcionalidades de computação paralela, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de computação quântica: Novas funcionalidades de computação quântica, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de computação gráfica: Novas funcionalidades de computação gráfica, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de computação em tempo real: Novas funcionalidades de computação em tempo real, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de computação em borda: Novas funcionalidades de computação em borda, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de computação em nuvem híbrida: Novas funcionalidades de computação em nuvem híbrida, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de computação em nuvem privada: Novas funcionalidades de computação em nuvem privada, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de computação em nuvem pública: Novas funcionalidades de computação em nuvem pública, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de computação em nuvem multi-nuvem: Novas funcionalidades de computação em nuvem multi-nuvem, como suporte para novos algoritmos e bibliotecas</p>
+                    <p>Novas funcionalidades de computação em nuvem híbrida: Novas funcionalidades de computação em nuvem híbrida, como suporte para novos algoritmos e bibliotecas</p> -->
+                    <p>Essas são apenas algumas das novidades que o Python 3.12 traz para a mesa. Se você é um desenvolvedor Python, vale a pena conferir as melhorias e como elas podem beneficiar seu trabalho.</p>
+                    <p>Para mais detalhes, consulte a documentação oficial do Python 3.12.</p>
+                    <a href="#" class="read-more">Leia mais</a>
+                </article>
+
+                <article class="post">
+                    <h1>JavaScript Moderno: ES2023 Features</h2>
+                    <span class="post-date">Publicado em 21 de Março de 2024</span>
+                    <img src="../img/JavaScript.jpg" alt="JavaScript ES2023">
+                    <p>Conheça as novas features do JavaScript que chegaram com o ES2023 e como elas podem melhorar seu código e produtividade.</p>
+                    <p>O JavaScript é uma linguagem em constante evolução, e a versão ES2023 trouxe várias melhorias e novas funcionalidades que tornam o desenvolvimento mais eficiente e agradável. Vamos explorar algumas das principais novidades.</p>
+                    <li>Métodos de array: Novos métodos de array, como toSorted, toReversed, toSpliced, findLast e findLastIndex</li>
+                    <li>Hashbang (Shebang): Permite a execução de scripts diretamente a partir da linha de comando usando</li>
+                    <li>Símbolos como chaves de WeakMap: Permite o uso de símbolos únicos como chaves </li>
+                    <li>GroupBy e groupByToMap: Simplifica transformações de dados complexas, tornando o código mais fácil de ler e manter </li>
+                    <li>Symbol.prototype.description: Fornece insights sobre os valores de símbolo, ajudando no debugging </li>
+                    <li>Support Hashbang Grammar: Torna os scripts JavaScript mais portáteis e mais fáceis de executar em diferentes ambientes </li>
+                    <p>Essas funcionalidades contribuem para uma linguagem mais versátil e eficiente. </p>
+                    <h1>Os benefícios das novas funcionalidades do ES2023 incluem: </h1>
+                    <li>Melhoria da legibilidade do código</li>
+                    <li>Melhor desempenho</li>
+                    <li>Prevenção de bugs causados por mutações acidentais</li>
+                    <li>Melhoria do debugging</li>
+                    <li>Portabilidade</li>
+                    <li>Expansão das capacidades da linguagem</li>
+                    <li>Melhoria da experiência do desenvolvedor</li>
+                    <li>Código mais eficiente</li>
+                    <!-- <li>Facilidade de uso</li>
+                    <li>Melhoria da produtividade</li>
+                    <li>Facilidade de manutenção</li> -->
+                    <!-- <p>WeakRefs: Permite criar referências fracas a objetos, ajudando na gestão de memória e evitando vazamentos</p>
+                    <p>Top-level await: Permite o uso de await no nível superior de módulos, facilitando a escrita de código assíncrono</p> -->
+                    <!-- <p>Uma das principais novidades do ES2023 é o suporte para o método "Array.prototype.findLast()", que permite encontrar o último elemento que atende a uma condição específica. Isso facilita a busca em arrays e torna o código mais legível.</p>
+                    <p>Outra adição interessante é o "WeakRefs", que permite criar referências fracas a objetos, ajudando na gestão de memória e evitando vazamentos. Isso é especialmente útil em aplicações que lidam com muitos objetos temporários.</p>
+                    <p>Além disso, o ES2023 trouxe melhorias na sintaxe de classes, permitindo a definição de métodos estáticos e propriedades privadas de forma mais intuitiva. Isso torna o código mais organizado e fácil de entender.</p> -->
+                    <a href="#" class="read-more">Leia mais</a>
+                </article>
+            </section>
+
+            <aside class="sidebar-content">
+                <div class="tags-cloud">
+                    <h3>Tags Populares</h3>
+                    <div class="tags">
+                        <a href="#">Python</a>
+                        <a href="#">JavaScript</a>
+                        <a href="#">TypeScript</a>
+                        <a href="#">React</a>
+                        <a href="#">Node.js</a>
+                        <a href="#">Algoritmos</a>
+                        <a href="#">Performance</a>
+                        <a href="#">WebAssembly</a>
+                    </div>
+                </div>
+
+                <div class="resources">
+                    <h3>Recursos Úteis</h3>
+                    <ul>
+                        <li><a href="#">Documentação Oficial</a></li>
+                        <li><a href="#">Playgrounds Online</a></li>
+                        <li><a href="#">Cursos Recomendados</a></li>
+                        <li><a href="#">Fóruns de Discussão</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+  <div class="container footer-inner">
+    <div><strong>Hack<span>Blog</span></strong><p>Tecnologia, programação, hardware e cultura digital.</p></div>
+    <p>© 2026 HackBlog. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+    <script src="../nav-bar.js"></script>
+</body>
+</html>
