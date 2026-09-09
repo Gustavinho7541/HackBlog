@@ -1,38 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Menu toggle for mobile
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav ul');
-    const sidebar = document.querySelector('.sidebar');
-
-    menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('active');
-    });
-
-    // Sidebar toggle
-    menuToggle.addEventListener('click', function() {
-        sidebar.classList.toggle('active');
-    });
-
-    // Close sidebar when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!sidebar.contains(e.target) && e.target !== menuToggle) {
-            sidebar.classList.remove('active');
-            nav.classList.remove('active');
-        }
-    });
-
-    // Prevent sidebar click from closing immediately
-    sidebar.addEventListener('click', function(e) {
-        e.stopPropagation();
-    });
-
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('is-open');
+    toggle.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', e => {
+    if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+      nav.classList.remove('is-open'); toggle.classList.remove('is-open'); toggle.setAttribute('aria-expanded','false');
+    }
+  });
+  const current = location.pathname.split('/').pop() || 'index.html';
+  nav.querySelectorAll('a').forEach(a => {
+    const target = a.getAttribute('href').split('/').pop();
+    if (target === current) a.classList.add('active');
+  });
 });
